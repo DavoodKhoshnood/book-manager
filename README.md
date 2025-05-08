@@ -1,1 +1,1 @@
-# book_manager
+# book-manager
