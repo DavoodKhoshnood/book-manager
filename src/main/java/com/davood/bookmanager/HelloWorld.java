@@ -2,6 +2,7 @@ package com.davood.bookmanager;
 
 public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Hello, Java World!");
+		Book myBook = new Book("The Hobbit", "J.R.R. Tolkien", 1937);
+		System.out.println(myBook);
 	}
 }

@@ -29,7 +29,7 @@
                 </execution>
             </executions>
             <configuration>
-                <mainClass>com.yourname.bookmanager.HelloWorld</mainClass>
+                <mainClass>com.davood.bookmanager.HelloWorld</mainClass>
             </configuration>
         </plugin>
     </plugins>
