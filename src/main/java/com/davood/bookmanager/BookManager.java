@@ -32,5 +32,17 @@ public class BookManager {
         }
         return null; // not found!
     }
+
+    public List<Book> searchBooksByKeyword(String keyword) {
+        List<Book> results = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().toLowerCase().contains(keyword.toLowerCase())
+                    || book.getAuthor().toLowerCase().contains(keyword.toLowerCase())) {
+                results.add(book);
+            }
+        }
+        return results;
+    }
+
 }
 

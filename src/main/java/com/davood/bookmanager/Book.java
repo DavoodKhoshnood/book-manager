@@ -12,6 +12,11 @@ public class Book {
         this.year = year;
     }
 
+    // Constructor without year
+    public Book(String title, String author) {
+        this(title, author, -1); // -1 = unknown year
+    }
+
     // Getters
     public String getTitle() {
         return title;
@@ -28,7 +33,7 @@ public class Book {
     // toString method
     @Override
     public String toString() {
-        return title + " by " + author + " (" + year + ")";
+        return title + " by " + author + (year >=0 ? " (" + year + ")" : "(Year unknown)");
     }
 }
 
